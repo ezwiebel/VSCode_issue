@@ -2,6 +2,16 @@
 
 ### To reproduce the issue
 
+>EDIT
+>Apparently no need to install `Go` and `jsx` extensions ton get the problem.
+>Problem solved with excluding `node_modules` folder explicitely with its full path in `jsconfig.json` :
+```
+"exclude": [
+   "frontend/node_modules"
+]
+```
+>Still need to figure out why tsserver didn't warn about problem with that setup
+
 1. Open `VSCode_issue` folder in VSCode
 
 2. Install extensions `Go` and `jsx` :
